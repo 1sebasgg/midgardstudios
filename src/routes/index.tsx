@@ -208,7 +208,7 @@ function Index() {
                 Construyamos juntos.
               </h2>
               <a
-                href="mailto:hola@midgardstudios.com"
+                href="mailto:contacto.midgardstudios@gmail.com"
                 className="group inline-flex items-center bg-paper text-carbon pr-5 transition-transform hover:-translate-y-1"
               >
                 <span className="size-11 bg-carbon text-paper flex items-center justify-center mr-4">
@@ -226,7 +226,7 @@ function Index() {
               <div className="flex flex-col gap-5">
                 <span className="text-[10px] tracking-[0.25em] uppercase opacity-40">Contacto</span>
                 <div className="flex flex-col gap-2 text-sm md:text-base">
-                  <a href="mailto:hola@midgardstudios.com" className="hover:opacity-60 transition-opacity break-all">
+                  <a href="mailto:contacto.midgardstudios@gmail.com" className="hover:opacity-60 transition-opacity break-all">
                     contacto.midgardstudios@gmail.com
                   </a>
                   <a href="https://instagram.com/midgard.studios" className="hover:opacity-60 transition-opacity">
