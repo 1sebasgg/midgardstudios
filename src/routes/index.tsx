@@ -229,11 +229,11 @@ function Index() {
                   <a href="mailto:contacto.midgardstudios@gmail.com" className="hover:opacity-60 transition-opacity break-all">
                     contacto.midgardstudios@gmail.com
                   </a>
-                  <a href="https://instagram.com/midgard.studios" className="hover:opacity-60 transition-opacity">
-                    +56 9 3586 3215
+                  <a href="https://instagram.com/midgardstudioscl" className="hover:opacity-60 transition-opacity">
+                    @midgardstudioscl
                   </a>
-                  <a href="https://www.midgardstudios.com" className="hover:opacity-60 transition-opacity">
-                    @midgard.studios
+                  <a href="https://www.midgardstudios.cl" className="hover:opacity-60 transition-opacity">
+                    +56 9 3586 3215 
                   </a>
                 </div>
               </div>
