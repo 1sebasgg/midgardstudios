@@ -253,7 +253,7 @@ function Index() {
             </div>
             <div className="flex gap-6 md:gap-8 text-[10px] font-medium tracking-[0.25em] uppercase opacity-40 shrink-0">
               <a href="https://instagram.com/midgardstudioscl" className="hover:opacity-100 transition-opacity">Instagram</a>
-              <a href="#" className="hover:opacity-100 transition-opacity">Whatsapp</a>
+              <a href="#" className="hover:opacity-100 transition-opacity">Whatsapplkasjdlkja</a>
             </div>
           </div>
         </div>
