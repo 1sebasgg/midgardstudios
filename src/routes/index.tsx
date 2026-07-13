@@ -42,7 +42,9 @@ function Index() {
         }`}
       >
         <div className="max-w-screen-2xl mx-auto px-6 md:px-12 py-6 grid grid-cols-[minmax(0,1fr)_auto] sm:flex sm:justify-between items-center gap-4">
-          <div className={`text-sm font-semibold tracking-[0.3em] uppercase ${scrolled ? "text-ink" : "text-paper"}`}>
+          <div
+            className={`text-sm font-semibold tracking-[0.3em] uppercase ${scrolled ? "text-ink" : "text-paper"}`}
+          >
             Midgard
           </div>
           <div className="flex gap-6 sm:gap-12 shrink-0">
@@ -131,8 +133,8 @@ function Index() {
                 />
               </div>
               <p className="max-w-[44ch] text-sm md:text-base text-paper/60 leading-relaxed text-pretty">
-                Rediseño de identidad digital para un hito de la arquitectura moderna.
-                Enfoque en la preservación visual y la interactividad técnica.
+                Rediseño de identidad digital para un hito de la arquitectura moderna. Enfoque en la
+                preservación visual y la interactividad técnica.
               </p>
             </article>
 
@@ -152,8 +154,8 @@ function Index() {
                 />
               </div>
               <p className="max-w-[38ch] text-sm md:text-base text-paper/60 leading-relaxed text-pretty">
-                Portafolio interactivo para firma boutique. Navegación basada en
-                planos técnicos y capas constructivas.
+                Portafolio interactivo para firma boutique. Navegación basada en planos técnicos y
+                capas constructivas.
               </p>
             </article>
           </div>
@@ -212,7 +214,12 @@ function Index() {
                 className="group inline-flex items-center bg-paper text-carbon pr-5 transition-transform hover:-translate-y-1"
               >
                 <span className="size-11 bg-carbon text-paper flex items-center justify-center mr-4">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" className="size-4">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    className="size-4"
+                  >
                     <path d="M1 4.5A1.5 1.5 0 0 1 2.5 3h11A1.5 1.5 0 0 1 15 4.5v7a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 1 11.5v-7Zm1.5-.5a.5.5 0 0 0-.5.5v.4l6 3.6 6-3.6V4.5a.5.5 0 0 0-.5-.5h-11Zm11.5 2.07-5.74 3.44a.5.5 0 0 1-.52 0L2 6.07V11.5a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 .5-.5V6.07Z" />
                   </svg>
                 </span>
@@ -226,21 +233,33 @@ function Index() {
               <div className="flex flex-col gap-5">
                 <span className="text-[10px] tracking-[0.25em] uppercase opacity-40">Contacto</span>
                 <div className="flex flex-col gap-2 text-sm md:text-base">
-                  <a href="mailto:contacto.midgardstudios@gmail.com" className="hover:opacity-60 transition-opacity break-all">
+                  <a
+                    href="mailto:contacto.midgardstudios@gmail.com"
+                    className="hover:opacity-60 transition-opacity break-all"
+                  >
                     contacto.midgardstudios@gmail.com
                   </a>
-                  <a href="https://instagram.com/midgardstudioscl" className="hover:opacity-60 transition-opacity">
+                  <a
+                    href="https://instagram.com/midgardstudioscl"
+                    className="hover:opacity-60 transition-opacity"
+                  >
                     @midgardstudioscl
                   </a>
-                  <a href="https://www.midgardstudios.cl" className="hover:opacity-60 transition-opacity">
-                    +56 9 3586 3215 
+                  <a
+                    href="https://www.midgardstudios.cl"
+                    className="hover:opacity-60 transition-opacity"
+                  >
+                    +56 9 3586 3215
                   </a>
                 </div>
               </div>
               <div className="flex flex-col gap-5">
-                <span className="text-[10px] tracking-[0.25em] uppercase opacity-40">Ubicación</span>
+                <span className="text-[10px] tracking-[0.25em] uppercase opacity-40">
+                  Ubicación
+                </span>
                 <p className="text-sm md:text-base leading-relaxed">
-                  Santiago, Chile.<br />
+                  Santiago, Chile.
+                  <br />
                   Disponibles para proyectos globales.
                 </p>
               </div>
@@ -252,8 +271,19 @@ function Index() {
               Midgard Studios © {new Date().getFullYear()}
             </div>
             <div className="flex gap-6 md:gap-8 text-[10px] font-medium tracking-[0.25em] uppercase opacity-40 shrink-0">
-              <a href="https://instagram.com/midgardstudioscl" className="hover:opacity-100 transition-opacity">Instagram</a>
-              <a href="#" className="hover:opacity-100 transition-opacity">Whatsapp</a>
+              <a
+                href="https://instagram.com/midgardstudioscl"
+                className="hover:opacity-100 transition-opacity"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://wa.me/56949299142?text=Hola,%20me%20interesa%20tu%20producto"
+                target="_blank"
+                className="hover:opacity-100 transition-opacity"
+              >
+                WhatsApp
+              </a>
             </div>
           </div>
         </div>
