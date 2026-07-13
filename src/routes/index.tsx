@@ -278,7 +278,7 @@ function Index() {
                 Instagram
               </a>
               <a
-                href="https://wa.me/56949299142?text=Hola,%20me%20interesa%20tu%20producto"
+                href="https://wa.me/56935863215?text=Hola,%20me%20interesa%20tu%20producto"
                 target="_blank"
                 className="hover:opacity-100 transition-opacity"
               >
