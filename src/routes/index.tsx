@@ -72,6 +72,16 @@ function Index() {
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
+  const handleScrollClick = (hash?: string) => {
+    if (hash) {
+      const element = document.getElementById(hash);
+      if (element) {
+        // Hacemos que el navegador haga scroll hacia el ID suavemente
+        element.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  };
+
   return (
     <div className="min-h-screen bg-paper text-ink">
       {/* Navigation */}
@@ -86,23 +96,26 @@ function Index() {
               scrolled ? "text-ink" : "text-paper"
             }`}
           >
-            <a href="/">Midgard</a>
+            <Link to="/" hash="" onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}>
+              Midgard
+            </Link>
           </div>
           <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 md:gap-12">
             {[
-              ["Proyectos", "#proyectos"],
-              ["Estudio", "#estudio"],
-              ["Contacto", "#contacto"],
+              ["Proyectos", "proyectos"],
+              ["Estudio", "estudio"],
+              ["Contacto", "contacto"],
             ].map(([label, href]) => (
-              <a
+              <Link
+                to="/"
                 key={label}
-                href={href}
+                onClick={() => handleScrollClick(href)}
                 className={`text-[11px] font-medium tracking-[0.2em] uppercase transition-opacity hover:opacity-60 ${
                   scrolled ? "text-ink" : "text-paper"
                 }`}
               >
                 {label}
-              </a>
+              </Link>
             ))}
           </div>
         </div>
