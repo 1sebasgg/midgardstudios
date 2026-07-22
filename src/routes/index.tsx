@@ -19,25 +19,27 @@ interface Project {
 
 const PROJECTS: Project[] = [
   {
-    id: "casa-de-la-cascada",
+    id: "Maqueta 40 Proyectos",
     number: "01/",
-    title: "Casa de la Cascada",
-    imagePath: "/src/assets/project-01.jpg",
+    title: "Maqueta 40 Proyectos",
+    imagePath: "/src/assets/project-01.png",
     alt: "Casa brutalista en el bosque",
     description:
       "Rediseño de identidad digital para un hito de la arquitectura moderna. Enfoque en la preservación visual y la interactividad técnica.",
-    colSpan: "md:col-span-7",
+    colSpan: "md:col-span-6",
+    link: "https://maqueta40proyectos.lovable.app/",
   },
   {
-    id: "studio-valdes",
+    id: "Arquitectura en Papel",
     number: "02/",
-    title: "Studio Valdés",
-    imagePath: "/src/assets/project-02.jpg",
+    title: "Arquitectura en Papel",
+    imagePath: "/src/assets/project-02.png",
     alt: "Interior de estudio de arquitectura",
     description:
       "Portafolio interactivo para firma boutique. Navegación basada en planos técnicos y capas constructivas.",
-    colSpan: "md:col-span-5",
-    extraClass: "md:pt-48",
+    colSpan: "md:col-span-6",
+    link: "https://arquitecturaenpapel.cl/",
+    extraClass: "md:pt-48", // Este padding top genera el desfase hacia abajo
   },
 ];
 
@@ -90,7 +92,7 @@ function Index() {
           scrolled ? "mix-blend-normal bg-paper/80 backdrop-blur-md" : "mix-blend-difference"
         }`}
       >
-        <div className="max-w-screen-2xl mx-auto px-6 md:px-12 py-6 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
+        <div className="max-w-screen-2xl mx-auto px-6 md:px-12 py-4 md:py-6 flex flex-col sm:flex-row items-center justify-between gap-4 sm:gap-6">
           <div
             className={`text-sm font-semibold tracking-[0.3em] uppercase shrink-0 ${
               scrolled ? "text-ink" : "text-paper"
@@ -123,7 +125,7 @@ function Index() {
 
       {/* Hero */}
       <header className="relative min-h-screen flex flex-col justify-center px-6 md:px-12 pt-32 pb-16 overflow-hidden">
-        <div className="absolute top-24 left-6 md:left-12 text-[10px] font-medium tracking-[0.3em] uppercase opacity-40">
+        <div className="absolute top-32 md:top-24 left-6 md:left-12 text-[10px] font-medium tracking-[0.3em] uppercase opacity-40">
           Midgard Studios / Santiago, CL
         </div>
 
@@ -161,10 +163,8 @@ function Index() {
       {/* Portfolio */}
       <section id="proyectos" className="bg-carbon text-paper py-24 md:py-40 px-6 md:px-12">
         <div className="max-w-screen-2xl mx-auto">
-          <div className="grid grid-cols-[minmax(0,1fr)_auto] sm:flex sm:justify-between items-end border-b border-paper/10 pb-8 mb-16 gap-4">
-            <h2 className="font-serif text-3xl md:text-4xl font-medium truncate">
-              Proyectos Seleccionados
-            </h2>
+          <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-6 lg:gap-12 2xl:gap-24">
+            <h2 className="font-serif text-3xl md:text-4xl font-medium truncate">Proyectos</h2>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24">
@@ -177,12 +177,12 @@ function Index() {
               // El elemento de la imagen SIEMPRE tiene las clases de animación al hacer hover en el artículo (group)
               const ImageElement = (
                 <div
-                  className={`w-full aspect-[16/10] overflow-hidden mb-8 ring-1 ring-paper/10 ${project.link ? "cursor-pointer" : "cursor-default"}`}
+                  className={`w-full aspect-[15/8] overflow-hidden mb-6 md:mb-8 ring-1 ring-paper/10 ${project.link ? "cursor-pointer" : "cursor-default"}`}
                 >
                   <img
                     src={resolvedImage}
                     alt={project.alt}
-                    className="w-full h-full object-cover grayscale group-hover:scale-[1.02] transition-all duration-1000"
+                    className="w-full h-full object-cover grayscale hover:scale-[1.02] hover:grayscale-0 transition-all duration-1000"
                     loading="lazy"
                   />
                 </div>
@@ -265,7 +265,7 @@ function Index() {
       {/* Contact / Footer */}
       <footer id="contacto" className="bg-carbon text-paper py-24 md:py-32 px-6 md:px-12">
         <div className="max-w-screen-2xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-16 md:gap-24 border-b border-paper/10 pb-20 md:pb-24">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-12 self-end mt-12 md:mt-0">
             <div>
               <h2 className="font-serif text-5xl md:text-8xl font-medium leading-[0.95] mb-12 text-balance">
                 Construyamos juntos.
@@ -313,7 +313,7 @@ function Index() {
             </div>
           </div>
 
-          <div className="pt-10 grid grid-cols-[minmax(0,1fr)_auto] sm:flex sm:justify-between items-center gap-4">
+          <div className="pt-10 flex sm:flex sm:justify-between items-center gap-4">
             <div className="text-[10px] font-medium tracking-[0.4em] uppercase opacity-40 truncate">
               Midgard Studios © {new Date().getFullYear()}
             </div>
