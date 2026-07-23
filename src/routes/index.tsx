@@ -18,7 +18,7 @@ export const Route = createFileRoute("/")({
       { property: "og:title", content: "Midgard Studios" },
       {
         property: "og:description",
-        content: "Portafolios de arquitectura y presencia digital.",
+        content: "Creamos presencia digital y Portafolios de arquitectura.",
       },
       { property: "og:image", content: projectImages["/src/assets/project-01.jpg"]?.default },
       { name: "twitter:image", content: projectImages["/src/assets/project-01.jpg"]?.default },

@@ -7,7 +7,7 @@ export function Process() {
             — Metodología
           </div>
           <h2 className="font-serif text-4xl md:text-7xl font-medium text-balance max-w-[20ch] leading-[1.05]">
-            Convertimos planos físicos en experiencias digitales.
+            Convertimos tus ideas de diseño en experiencias digitales.
           </h2>
         </div>
 

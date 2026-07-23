@@ -84,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "Estudio dedicado al diseño de portafolios de arquitectura y sitios web profesionales. Santiago, Chile.",
       },
       { property: "og:title", content: "Midgard Studios" },
-      { property: "og:description", content: "Portafolios de arquitectura y presencia digital." },
+      { property: "og:description", content: "Creamos Portafolios de arquitectura y presencia digital." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],

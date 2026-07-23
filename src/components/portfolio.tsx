@@ -8,9 +8,15 @@ export function Portfolio() {
       className="bg-carbon text-paper pt-12 pb-24 md:pt-20 md:pb-40 px-6 md:px-12"
     >
       <div className="max-w-screen-2xl mx-auto">
-        <div className="mb-12 md:mb-20 grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-6 lg:gap-12 2xl:gap-24">
-          <h2 className="font-serif text-4xl md:text-5xl font-medium">Proyectos</h2>
-        </div>
+        <div className="mb-12 md:mb-20">
+  <h2 className="font-serif text-4xl md:text-5xl font-medium">
+    Proyectos
+  </h2>
+
+  <p className="mt-3 text-sm md:text-base text-paper/60 tracking-wide">
+    Algunos de nuestros diseños.
+  </p>
+</div>
 
         <div className="grid grid-cols-1 md:grid-cols-12 gap-16 md:gap-24">
           {PROJECTS.map((project) => {
@@ -56,7 +62,7 @@ export function Portfolio() {
                   ImageElement
                 )}
 
-                <p className="max-w-[44ch] text-sm md:text-base text-paper/60 leading-relaxed text-pretty">
+                <p className="max-w-[55ch] text-sm md:text-base text-paper/60 leading-relaxed text-pretty">
                   {project.description}
                 </p>
               </article>

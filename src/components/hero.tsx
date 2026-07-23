@@ -14,7 +14,7 @@ export function Hero() {
             className="font-serif text-3xl md:text-5xl italic font-medium max-w-[22ch] text-balance leading-[1.05] animate-fade-up"
             style={{ animationDelay: "200ms" }}
           >
-            Portafolios de arquitectura y presencia digital.
+            Creamos presencia digital y Portafolios de proyectos.
           </p>
           <div
             className="flex flex-col gap-3 text-[11px] tracking-[0.2em] uppercase font-medium animate-fade-up"
