@@ -23,9 +23,8 @@ export function Portfolio() {
 
             const ImageElement = (
               <div
-                className={`relative w-full aspect-[15/8] overflow-hidden mb-6 md:mb-8 ring-1 ring-paper/10 ${
-                  project.link ? "cursor-pointer" : "cursor-default"
-                }`}
+                className={`group relative w-full aspect-[15/8] overflow-hidden mb-6 md:mb-8 ring-1 ring-paper/10 ${project.link ? "cursor-pointer" : "cursor-default"
+                  }`}
               >
                 <img
                   src={resolvedImage}
@@ -36,6 +35,23 @@ export function Portfolio() {
 
                 {project.link && (
                   <>
+                    {/* Indicador de enlace siempre visible */}
+                    <div className="pointer-events-none absolute top-4 right-4 md:top-6 md:right-6 z-10 flex items-center justify-center w-10 h-10 md:w-12 md:h-12 rounded-full border border-paper/30 bg-carbon/40 backdrop-blur-md text-paper transition-all duration-500 group-hover:bg-paper group-hover:text-carbon group-hover:scale-110 shadow-lg">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.5"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="w-5 h-5 md:w-6 md:h-6 transition-transform duration-500 group-hover:-translate-y-0.5 group-hover:translate-x-0.5"
+                      >
+                        <line x1="7" y1="17" x2="17" y2="7" />
+                        <polyline points="7 7 17 7 17 17" />
+                      </svg>
+                    </div>
+
                     <div className="pointer-events-none absolute inset-0 bg-carbon/0 group-hover:bg-carbon/20 transition-colors duration-700" />
 
                     <div className="pointer-events-none absolute bottom-4 left-4 md:bottom-6 md:left-6 flex items-center gap-3 text-paper opacity-0 -translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-700">
@@ -43,23 +59,6 @@ export function Portfolio() {
                         Ver proyecto
                       </span>
                       <span className="h-px w-8 bg-paper/70" />
-                    </div>
-
-                    <div className="pointer-events-none absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                      <div className="relative flex items-center justify-center w-16 h-16 md:w-24 md:h-24 rounded-full border border-paper/60 bg-paper/10 backdrop-blur-[2px] opacity-0 scale-90 group-hover:opacity-100 group-hover:scale-100 transition-all duration-700 ease-out">
-                        <span className="absolute inset-0 rounded-full border border-paper/30 animate-ping-slow" />
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          stroke="currentColor"
-                          strokeWidth="1"
-                          className="w-7 h-7 md:w-10 md:h-10 text-paper transition-transform duration-700 group-hover:translate-x-1"
-                        >
-                          <line x1="4" y1="12" x2="20" y2="12" />
-                          <polyline points="14 6 20 12 14 18" />
-                        </svg>
-                      </div>
                     </div>
                   </>
                 )}
@@ -69,7 +68,7 @@ export function Portfolio() {
             return (
               <article
                 key={project.id}
-                className={`${project.colSpan} ${project.extraClass || ""} group`}
+                className={`${project.colSpan} ${project.extraClass || ""}`}
               >
                 <div className="mb-6 flex items-baseline gap-4">
                   <span className="font-serif italic text-2xl opacity-70">{project.number}</span>
